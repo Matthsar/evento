@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* TELA MOBILE */
+@media screen and (max-width: 700px) {
+    .header {
+        display: none;
+    }
+
+    /*conteiner NAV que fica os MENUS*/
+    .navcontent {
+        display: flex;
+        background-color: rgb(29, 29, 43);
+    }
+
+    /* ALINHAMENTO DOS BLOCOS LINKS */
+    .navbar {
+        display: flex;
+        flex-flow: column;
+        width: 25%;
+        text-align: left;
+    }
+
+    /* CONTEUDO DENTRO DOS BLOCOSS*/
+    .navbar a {
+        color: aliceblue;
+        padding: 10px 15px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .cont-2 {
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: rgb(51, 51, 134);
+        width: 75%;
+    }
+
+    .cont-2 h2 {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        margin: 50px 0px 0px 0px;
+    }
+
+    .navbar a:hover {
+        background-color: rgb(51, 51, 134);
+        font-weight: bold;
+        border: white 1px solid;
+    }
+
+    .cont-2 p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .corpo {
+        flex-flow: row wrap;
+        display: flex;
+    }
+
+    .card {
+        flex: 48%;
+        background: #ccc;
+        height: 300px;
+        margin: 1%;
+    }
+}
+
+/*   TELA PC  */
+@media screen and (min-width: 700px) {
+
+    /*>>>>>>>>>>>>> RODAPE DA PAGINA <<<<<<<<<<<<<<<*/
+    .header {
+        background-color: rgb(51, 51, 134);
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .header h1 {
+        margin: 10px 0px 0px 0px;
+    }
+
+/* >>>>>>>>>>> FINAL DO RODAPE DA PAGINA <<<<<<<<<<<<<<<<<<<<<<*/
+
+/* >>>>>>>>>>> CONTAINER NAV ONDE FICA OS MENUS <<<<<<<<<<<<<<<*/
+
+    /*          ===CSS DO CONTAINER DO RODAPE===*/
+    .navcontent {
+        justify-content: flex-start;
+        align-content: center;
+        background-color: transparent;
+        flex-flow: row wrap;
+        display: flex;
+        height: 50px;
+    }
+    /*          ===FINAL CSS DO CONTAINER DO RODAPE===*/
+
+
+    /*          ===CSS DOS BLOCOS DE LINKS DA BARRA===*/
+    .navbar {
+        text-align: center;
+        border-left:rgba(29, 29, 29, 0.863) 2px solid ;
+        border-right: rgba(29, 29, 29, 0.863) 2px solid;
+        padding: 12px 20px;
+
+    }
+
+    /*          ====CSS DA TAG a NAVBAR====*/
+    a {
+        color: aliceblue;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .navbar:hover {
+        font-weight: bold;
+        
+    }
+
+    /*          ==== FINAL DO CSS DA TAG a NAVBAR====*/
+
+    /*          ====DESATIVAR O CONTAINER MOBILE EM TELA DE PC====*/
+    .cont-2 {
+        display: none;
+    }
+
+/* >>>>>>>>>>>>> FINAL DO CONTAINER DOS BLOCOS DE LINKS <<<<<<<<<<<< */
+
+
+/* >>>>>>>>>>>>> INICIO DO CONTAINER DO CORPO DA PAGINA <<<<<<<<<<<< */
+    .corpo {
+        flex-flow: row wrap;
+        display: flex;
+    }
+
+    /*CONTEUDO*/
+    .card {
+        flex: 48%;
+        background: #ccc;
+        height: 100%;
+        margin: 1%;
+    }
+
+/* >>>>>>>>>>>>> INICIO DO CONTAINER DO FORMULARIO DA PAGINA <<<<<<<<<<<< */
+
+
+    form#FormCont{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        height: 100%;
+        margin: 1%;
+    }
+    .cont-titulo{
+        padding: 20px ;
+    }
+
+
+    /*          ==== INICIO DO CSS DA DIV DOS FORM ====*/
+    .form-group{
+        padding: 10px;
+        display: flex;
+        flex-flow: column nowrap;;
+        width: 100%;
+       
+    } 
+
+    .cont-input1{
+        margin-left: 10px;
+        padding-right: 3%;
+        display: flex;
+    }
+    .cont-input{
+        margin-left: 10px;
+        padding-right: 3%;
+    }
+
+    .cont-buttom{
+        padding-top: 5%;
+        margin-left: 16px;
+    }
+
+    /*          ==== SUS E CPF ====*/
+    .cont-formSus{
+        padding: 10px;
+    }
+
+    .cont-formSus input{
+        width: 130px;
+    }
+
+    .cont-formCpf{
+        padding: 10px;
+    }
+
+    .cont-formCpf input{
+        width: 140px;
+    }
+
+    .cont-form{
+        padding: 10px;
+    }
+
+    .invalide{
+        background-color: red;
+        color: white;
+        display: none;
+    }
+   
+
+    /*          ==== FINAL SUS E CPF ====*/
+    
+    /*          ==== INICIO DO CSS DA DIV DOS FORM DE ATENDIMENTO ====*/
+    div#d2{
+        margin-right: 30%;
+        padding: 10px;
+    }
+
+    div#d3{
+       
+        margin-right: 30%;
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    /*          ==== FINAL DO CSS DA DIV DOS FORM DE ATENDIMENTO====*/
+
+    /*          ==== FINAL DO CSS DA DIV DOS FORM ====*/
+
+
+/* >>>>>>>>>>>>> FINAL DO CONTAINER DO FORMULARIO DA PAGINA <<<<<<<<<<<< */
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*display: flex; 
+    Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.
+    
+    flex-flow: row wrap;
+    Coloca o conteúdo em linha e permite a quebra de linha.
+   
+    flex-flow: row nowrap;
+    Coloca o conteúdo em linha e não permite a quebra de linha.
+   
+    flex-flow: column nowrap;
+    Coloca o conteúdo em coluna e não permite a quebra de linha.
+    
+    justify-content: flex-start;
+    Alinha os itens ao início do container.
+
+    justify-content: flex-end;
+    Alinha os itens ao final do container.
+
+    justify-content: center;
+    Alinha os itens ao centro do container.
+
+    justify-content: space-between;
+    Cria um espaçamento igual entre os elementos. Mantendo o primeiro grudado no início e o último no final.
+    
+    justify-content: space-around;
+    Cria um espaçamento entre os elementos. Os espaçamentos do meio são duas vezes maiores que o inicial e final.
+    
+    align-items: stretch;
+    Valor padrão, ele que faz com que os flex itens cresçam igualmente.
+
+    align-items: flex-start;
+    Alinha os itens ao início.
+
+    align-items: flex-end;
+    Alinha os itens ao final.
+
+    align-items: center;
+    Alinha os itens ao centro.
+
+    align-items: baseline;
+    Alinha os itens de acordo com a linha base da tipografia.
+    
+    align-content: stretch;
+    Valor padrão, ele que faz com que os flex itens cresçam igualmente na vertical.
+
+    align-content: flex-start;
+    Alinha todas as linhas de itens ao início.
+
+    align-content: flex-end;
+    Alinha todas as linhas de itens ao final.
+
+    align-content: center;
+    Alinha todas as linhas de itens ao centro.
+
+    align-content: space-between;
+    Cria um espaçamento igual entre as linhas. Mantendo a primeira grudada no topo e a última no bottom.
+
+    align-content: space-around;
+    Cria um espaçamento entre as linhas. Os espaçamentos do meio são duas vezes maiores que o top e bottom.
+    */
