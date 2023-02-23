@@ -50,10 +50,11 @@
                                 <input class="form-control" id="cpf" oninput="mascara(this)" type="text" name="cpf"
                                     placeholder="" onblur="validarCPF(this)" required>
                             </div>
+                            <div id="res" name="res"></div>
                             
                         </div>
-                            <div class="invalide" id="cpf-required-error">Campo Obrigatório</div>
-                            <div class="invalide">CPF Inválido</div>
+                            
+                            
 
 
                         <div class="cont-formCpf">

@@ -211,10 +211,8 @@ body {
         padding: 10px;
     }
 
-    .invalide{
-        background-color: red;
-        color: white;
-        display: none;
+    #res{
+        color: red;
     }
    
 

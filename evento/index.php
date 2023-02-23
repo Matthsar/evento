@@ -1,178 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Assistência Social</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/bootstrap/css/bootstrap.min.css"
-    />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/css-hamburgers/hamburgers.min.css"
-    />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/select2/select2.min.css"
-    />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="css/util.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/form.css" />
-    <!--===============================================================================================-->
-
-  </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro Peixe</title>
+    <link href="css/cad.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="app/Css/style.css">
+</head>
 
   <body>
-    <div class="limiter">
-      <div class="container-login100">
-        <div class="wrap-login100">
-          <div class="login100-pic">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <img src="imagens/logo.png" alt="IMG" />
-          </div>
-          
-
-    <div class="login100-form validate-form">
-      
-      <form method="post" action="php/dados.php">
-
-        <div>
-          <label for="name">Nº DO COMPROVANTE</label>
-            <div class="inst">
-              <input class="inp" type="text" name="comprova" placeholder="" required>
-            </div>
+  <script src="Js/script.js"></script>
+    <header class="header">
+        <h1>Assistência Social</h1>
+        <p>Cadastro do Peixe</p>
+        <div class="navcontent">
+            <nav class="navbar">
+                <a href="index.php">DASHBOARD</a>
+            </nav>
         </div>
+    </header>
 
-        <div>
-          <label for="name">NOME</label>
-            <div class="inst">
-              <input class="inp" type="text" name="name" placeholder="" required>
-            </div>
+
+    <div class="corpo">
+        <div class="card">
+
+
+        <a href="form.php">
+            <button class="btn btn-success">Novo Cadastro
+        </a>
+
+        <a href="###">
+            <button class="btn btn-success">Consultar
+        </a>
+
+
+        <!-- card -->
         </div>
-
-        <div>
-          <label for="name">CPF</label>
-              <script>
-                  function mascara(i){
-                  var v = i.value;
-                      if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-                        i.value = v.substring(0, v.length-1);
-                        return;}
-                  i.setAttribute("maxlength", "14");
-                  if (v.length == 3 || v.length == 7) i.value += ".";
-                  if (v.length == 11) i.value += "-";
-                  }
-              </script>
-          <div class="inst">
-          <input class="inp" oninput="mascara(this)" type="text" name="cpf" placeholder="" required>
-          </div>        
-        </div>
-
-        <div>
-          <label for="name">NIS</label>
-              <script>
-                  function mass(i){
-                  var v = i.value;
-                      if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-                        i.value = v.substring(0, v.length-1);
-                        return;}
-                  i.setAttribute("maxlength", "12");
-                  if (v.length == 9) i.value += "-";
-                  }
-              </script>
-          <div class="inst">
-           <input class="inp" oninput="mass(this)" type="text" name="nis" placeholder="" required>
-          </div>
-        </div>
-
-        <div>
-          <label for="name">ENDEREÇO</label>
-          <div class="inst">
-            <input class="inp" type="text" name="elog" placeholder="" required>
-          </div>
-        </div>
-
-        <div>
-          <label for="name">BAIRRO</label>
-          <select class="inp" name="bairro">
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-            <option value="">xxx</option> 
-          </select>
-        </div>
-        
-            <!-- Botão -->
-              <div class="button">
-                <button name="bt-logar" id="createButton">CADASTRAR</button>
-              </div>
-      </div>
-    </form>
-
-
-        </div>
-      </div>
+        <!-- corpo -->
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- JS -->
-   
-    <!--===============================================================================================-->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/tilt/tilt.jquery.min.js"></script>
-    <script>
-      $('.js-tilt').tilt({
-        scale: 1.1
-      })
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
   </body>
 </html>
 
