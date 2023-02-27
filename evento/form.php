@@ -67,19 +67,29 @@
 
                         <div class="cont-form">
                             <label for="estado">Local de Entrega</label>
-                            <select id="" class="form-select" name="bairro" autocomplete="off">
+                            <select id="" class="form-select" name="entrega" autocomplete="off">
                                 <option value="" data-default disabled selected></option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
-                                <option value="">xxx</option>
+                                <option value="CRAS ANTONIO MATIAS">CRAS - ANTONIO MATIAS</option>
+                                <option value="ESTER SIQUEIRA">ESTER SIQUEIRA</option>
+                                <option value="ODETE COSTA">ODETE COSTA</option>
+                                <option value="PAULO CORIDEIRO">PAULO CORIDEIRO</option>
+                                <option value="CRAS SANTO AFONSO">CRAS - SANTO AFONSO</option>
+                                <option value="MONICA BRAGA">MONICA BRAGA</option>
+                                <option value="SEDE">SEDE</option>
+                                <option value="MANICOBA SOARES">MANICOBA SOARES</option>
+                                <option value="MINADOR">MINADOR</option>
+                                <option value="UNA DO SIMAO">UNA DO SIMAO</option>
+                                <option value="TAMANDUA">TAMANDUA</option>
+                                <option value="JURUBEBA">JURUBEBA</option>
+                                <option value="GAMA">GAMA</option>
+                                <option value="ARMAZEM">GAMA</option>
+                                <option value="ACUDE NOVO">AÇUDE NOVO</option>
+                                <option value="QUEIMADA GRANDE">QUEIMADA GRANDE</option>
+                                <option value="SODRE">SODRE</option>
+                                <option value="IMPUEIRA">IMPUEIRA</option>
+                                <option value="BATALHA">BATALHA</option>
+                                <option value="ZE BENTO">ZE BENTO</option>
+                                <option value="CAIANA">CAIANA</option>
                             </select>
                         </div>
 
@@ -91,12 +101,14 @@
                             <label> Nome </label>
                             <input type="text" class="form-control" name="name" autocomplete="off">
                         </div>
-
+                        <div class="cont-form">
+                            <label> Bairro </label>
+                            <input type="text" class="form-control" name="bairro" autocomplete="off">
+                        </div>
                         <div class="cont-form">
                             <label> Endereço </label>
                             <input type="text" class="form-control" name="elog" autocomplete="off">
                         </div>
-
 
                     </div>
 

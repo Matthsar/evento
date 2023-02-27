@@ -8,6 +8,7 @@ $cpf = $_POST['cpf'];
 $nis = $_POST['nis'];
 $elog = $_POST['elog'];
 $bairro = $_POST['bairro'];
+$entrega = $_POST['entrega'];
 $enter = $_POST['bt-logar'];
 
 $db = mysqli_select_db($con, "pessoa") or die("erro");
@@ -17,10 +18,10 @@ if (isset($enter)) {
 	$verifica_cad = mysqli_query($con, "SELECT * FROM user WHERE cpf = '$cpf' ");
 
 	if (mysqli_num_rows($verifica_cad) == 1) {
-		echo "<script language= 'javascript' type='text/javascript'>alert('Este CPF já está cadastrado!'); window.location.href='../index.php';</script>";
+		echo "<script language= 'javascript' type='text/javascript'>alert('Este CPF já está cadastrado!'); window.location.href='../form.php';</script>";
 	} else {
-		$sql ="INSERT INTO user(numero, nome, cpf, nis, endereco, bairro)";
-		$sql.="VALUES ('$comprova', '$name', '$cpf', '$nis', '$elog', '$bairro')";
+		$sql ="INSERT INTO user(numero, nome, cpf, nis, endereco, bairro, entrega)";
+		$sql.="VALUES ('$comprova', '$name', '$cpf', '$nis', '$elog', '$bairro', '$entrega')";
 
 		$salvar = mysqli_query($con, $sql);
 
